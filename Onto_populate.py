@@ -2,7 +2,7 @@ from owlready2 import *
 import random
 import os
 import glob
-
+import global_var as g
 
 # Import and load the ontology from the owl file
 onto = get_ontology("Ontology/MEUS.owl")
@@ -13,6 +13,7 @@ commands_list=['goback','gohome','enter']
 detect_words=[]
 
 DATA_DIR="Dictionaries_txt"
+
 
 def clear_dir(dir):
     files = glob.glob(dir+"/*")
@@ -88,7 +89,7 @@ if __name__ == '__main__':
 
     # All words to detect
 
-    file=open("Check_txt/words_to_detect.txt","w+")
+    file=open(g.CHECKDIR+"words_to_detect.txt","w+")
 
     for each in detect_words:
 
@@ -96,7 +97,7 @@ if __name__ == '__main__':
 
     # Commands file list
 
-    file=open("Check_txt/special_commands.txt","w+")
+    file=open(g.CHECKDIR+"special_commands.txt","w+")
 
     for each in commands_list:
 
