@@ -1,0 +1,5 @@
+MildlyInjuredPeople
+SeverelyInjuredPeople
+goback
+gohome
+enter

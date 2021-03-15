@@ -1,0 +1,6 @@
+emergencybuilding
+emergencyoutdoor
+emergencypeople
+goback
+gohome
+enter

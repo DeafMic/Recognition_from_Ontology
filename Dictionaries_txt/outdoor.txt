@@ -1,0 +1,14 @@
+busstop
+crossroad
+crowded
+fountain
+hill
+hole
+intersection
+monument
+playground
+square
+street
+goback
+gohome
+enter

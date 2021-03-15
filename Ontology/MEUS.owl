@@ -1,0 +1,717 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#"
+     xml:base="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hasObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hasObject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#situation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#Family -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#Family">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#groupofpeople"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#Students"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#MildlyInjuredPeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#MildlyInjuredPeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#injuredpeople"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#SeverelyInjuredPeople"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoFoodPeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoFoodPeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#starvingpeople"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoMedicinePeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoMedicinePeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#starvingpeople"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoWaterPeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoWaterPeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#starvingpeople"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#SeverelyInjuredPeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#SeverelyInjuredPeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#injuredpeople"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#Students -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#Students">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#groupofpeople"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#airport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#airport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#bakery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#bakery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#shop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#bank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#bank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#bar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#bar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#blockedbuilding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#blockedbuilding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencybuilding"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hasObject"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#building"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#blockedbydebris -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#blockedbydebris">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencyoutdoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#busstop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#busstop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#butcher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#butcher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#shop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#cinema -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#cinema">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#cityhall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#cityhall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#coffeeshop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#coffeeshop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#shop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#collapsedbuilding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#collapsedbuilding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencybuilding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#comunal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#comunal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#court -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#court">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#crossroad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#crossroad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#crowded -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#crowded">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#deadpeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#deadpeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencypeople"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencybuilding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencybuilding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hasObject"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#building"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencyoutdoor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencyoutdoor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hasObject"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencypeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencypeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hasObject"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#people"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#firefighters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#firefighters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#comunal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#flooded -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#flooded">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencybuilding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#fountain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#fountain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#gasstation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#gasstation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#shop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#greeengrocery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#greeengrocery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#shop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#grocery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#grocery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#shop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#groupofpeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#groupofpeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#gym -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#gym">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hairdresser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hairdresser">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#shop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hospital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hospital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#comunal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hotel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#injuredpeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#injuredpeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencypeople"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#intersection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#intersection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#jail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#jail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#comunal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#library">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#mall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#mall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#middleageperson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#middleageperson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#monument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#monument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#museum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#museum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#oldperson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#oldperson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#people"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#onfire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#onfire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencybuilding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#panickedpeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#panickedpeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencypeople"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#people -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#people">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#pharmacy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#pharmacy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#shop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#playground -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#playground">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#policestation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#policestation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#comunal"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#postoffice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#postoffice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#comunal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#prison -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#prison">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#comunal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#railwaystation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#railwaystation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#school -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#school">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#comunal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#shop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#shop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#situation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#situation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#square -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#square">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#starvingpeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#starvingpeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencypeople"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#street -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#street">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#trafficjam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#trafficjam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencyoutdoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#youngperson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#youngperson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#people"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoFoodPeople"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoMedicinePeople"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoWaterPeople"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#bakery"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#butcher"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#gasstation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#greeengrocery"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#blockedbydebris"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#crossroad"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#crowded"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#square"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#street"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#trafficjam"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#building"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencybuilding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencyoutdoor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencypeople"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#people"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#building"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#people"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#building"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#outdoor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#people"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#situation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#cityhall"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#hospital"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#policestation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#school"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#deadpeople"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#groupofpeople"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#injuredpeople"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#oldperson"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#panickedpeople"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#starvingpeople"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#youngperson"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,6 @@
+building
+outdoor
+people
+goback
+gohome
+enter

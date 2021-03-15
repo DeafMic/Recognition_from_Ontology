@@ -1,0 +1,6 @@
+public
+shop
+comunal
+goback
+gohome
+enter

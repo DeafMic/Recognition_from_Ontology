@@ -1,0 +1,11 @@
+bakery
+butcher
+coffeeshop
+gasstation
+greeengrocery
+grocery
+hairdresser
+pharmacy
+goback
+gohome
+enter

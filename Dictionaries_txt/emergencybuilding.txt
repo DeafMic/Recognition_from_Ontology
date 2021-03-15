@@ -1,0 +1,7 @@
+blockedbuilding
+collapsedbuilding
+flooded
+onfire
+goback
+gohome
+enter

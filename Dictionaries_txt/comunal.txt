@@ -1,0 +1,10 @@
+firefighters
+hospital
+jail
+policestation
+postoffice
+prison
+school
+goback
+gohome
+enter

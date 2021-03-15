@@ -1,0 +1,7 @@
+injuredpeople
+starvingpeople
+deadpeople
+panickedpeople
+goback
+gohome
+enter
