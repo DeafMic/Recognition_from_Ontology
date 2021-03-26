@@ -1,6 +1,6 @@
-NoFoodPeople
-NoMedicinePeople
-NoWaterPeople
+nofood
+nomedicinepeople
+nowaterpeople
 goback
 gohome
 enter

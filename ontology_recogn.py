@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#! /usr/bin/env python3
 from os import environ, path
 from owlready2 import *
 from transitions import Machine
@@ -10,12 +10,10 @@ import rospy
 import pyaudio
 import std_msgs.msg
 import audioop
-import time
-import matplotlib.pyplot as plt
-import wave
 import numpy as np
-import sys
 import global_var as g
+
+os.chdir(sys.path[0])
 
 # Params
 CHUNK = 128  # CHUNKS of bytes to read each time from mic
@@ -98,7 +96,7 @@ def anti_copy(wordInput,to_detect):
     i=0
     bingo=''
     for each in to_detect:
-        if each in wordInput:
+        if each==wordInput:
             i = i+1
             bingo = each
     if i==1:
@@ -157,7 +155,12 @@ if __name__ == '__main__':
         list_to_detect=f.read().splitlines()
         f.close
 
-   
+    with open(CHECKDIR+"total_list(for lm).txt") as f:
+        all_words=f.read().splitlines()
+        f.close
+
+
+
 
     word_to_publish=''
 
@@ -188,7 +191,7 @@ if __name__ == '__main__':
 
     # ROS setup
 
-    pub = rospy.Publisher('chatter', std_msgs.msg.String, queue_size=10)
+    pub = rospy.Publisher('chatter', std_msgs.msg.Int16, queue_size=10)
     rospy.init_node('talker', anonymous=True)
     rate = rospy.Rate(10)  # 10h
 
@@ -215,6 +218,10 @@ if __name__ == '__main__':
     # Main Loop
 
     while not rospy.is_shutdown():
+
+        word_to_publish=''
+
+        index_to_publish=0
 
         print("Current state is", FSM.state)
 
@@ -256,8 +263,9 @@ if __name__ == '__main__':
             except:
                 print('failed going home')
 
-        
+        elif 'enter' in word:
 
+            word_to_publish = FSM.state
 
 
         ## State transition and check for copies
@@ -274,13 +282,24 @@ if __name__ == '__main__':
             except:
                 print("End or not in the list or repeat again")
 
-        ## Publish the final word
+        ## Publish the lowest level word
         
         elif detect_copy_check[0]:
             word_to_publish=detect_copy_check[1]
             
+        ##Publish the word ID
+
+        if word_to_publish:
             print("WORD TO PUBLISH", word_to_publish)
 
-        pub.publish(word_to_publish)
+            for each in all_words:
+                if word_to_publish in each:
+                    index_to_publish=all_words.index(each)
+
+
+            pub.publish(index_to_publish)
+    
+
+        
         rate.sleep()    
         

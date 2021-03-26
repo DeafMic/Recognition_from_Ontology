@@ -1,4 +1,4 @@
-language model created by quicklm on wed mar 10 10:09:30 est 2021
+language model created by quicklm on thu mar 25 10:27:50 edt 2021
 copyright (c) 1996-2010 carnegie mellon university and alexander i. rudnicky
 
 the model is in standard arpa format, designed by doug paul while he was at mitre.
@@ -7,162 +7,164 @@ the code that was used to produce this language model is available in open sourc
 please visit http://www.speech.cs.cmu.edu/tools/ for more information
 
 the (fixed) discount mass is 0.5. the backoffs are computed using the ratio method.
-this model based on a corpus of 72 sentences and 74 words
+this model based on a corpus of 73 sentences and 75 words
 
 \data\
-ngram 1=74
-ngram 2=144
-ngram 3=72
+ngram 1=75
+ngram 2=146
+ngram 3=73
 
 \1-grams:
 -0.7782 </s> -0.3010
 -0.7782 <s> -0.2218
--2.6355 airport -0.2218
--2.6355 bakery -0.2218
--2.6355 bank -0.2218
--2.6355 bar -0.2218
--2.6355 blockedbuilding -0.2218
--2.6355 blockedbydebris -0.2218
--2.6355 building -0.2218
--2.6355 busstop -0.2218
--2.6355 butcher -0.2218
--2.6355 cinema -0.2218
--2.6355 cityhall -0.2218
--2.6355 coffeeshop -0.2218
--2.6355 collapsedbuilding -0.2218
--2.6355 comunal -0.2218
--2.6355 court -0.2218
--2.6355 crossroad -0.2218
--2.6355 crowded -0.2218
--2.6355 deadpeople -0.2218
--2.6355 emergencybuilding -0.2218
--2.6355 emergencyoutdoor -0.2218
--2.6355 emergencypeople -0.2218
--2.6355 family -0.2218
--2.6355 firefighters -0.2218
--2.6355 flooded -0.2218
--2.6355 fountain -0.2218
--2.6355 gasstation -0.2218
--2.6355 goback -0.2218
--2.6355 gohome -0.2218
--2.6355 greeengrocery -0.2218
--2.6355 grocery -0.2218
--2.6355 groupofpeople -0.2218
--2.6355 gym -0.2218
--2.6355 hairdresser -0.2218
--2.6355 hill -0.2218
--2.6355 hole -0.2218
--2.6355 hospital -0.2218
--2.6355 hotel -0.2218
--2.6355 injuredpeople -0.2218
--2.6355 intersection -0.2218
--2.6355 jail -0.2218
--2.6355 library -0.2218
--2.6355 mall -0.2218
--2.6355 middleageperson -0.2218
--2.6355 mildlyinjuredpeople -0.2218
--2.6355 monument -0.2218
--2.6355 museum -0.2218
--2.6355 nofoodpeople -0.2218
--2.6355 nomedicinepeople -0.2218
--2.6355 nowaterpeople -0.2218
--2.6355 object -0.2218
--2.6355 oldperson -0.2218
--2.6355 onfire -0.2218
--2.6355 outdoor -0.2218
--2.6355 panickedpeople -0.2218
--2.6355 people -0.2218
--2.6355 pharmacy -0.2218
--2.6355 playground -0.2218
--2.6355 policestation -0.2218
--2.6355 postoffice -0.2218
--2.6355 prison -0.2218
--2.6355 public -0.2218
--2.6355 railwaystation -0.2218
--2.6355 school -0.2218
--2.6355 severelyinjuredpeople -0.2218
--2.6355 shop -0.2218
--2.6355 situation -0.2218
--2.6355 square -0.2218
--2.6355 starvingpeople -0.2218
--2.6355 street -0.2218
--2.6355 students -0.2218
--2.6355 trafficjam -0.2218
--2.6355 youngperson -0.2218
+-2.6415 airport -0.2218
+-2.6415 bakery -0.2218
+-2.6415 bank -0.2218
+-2.6415 bar -0.2218
+-2.6415 blockedbuilding -0.2218
+-2.6415 blockedbydebris -0.2218
+-2.6415 building -0.2218
+-2.6415 busstop -0.2218
+-2.6415 butcher -0.2218
+-2.6415 cinema -0.2218
+-2.6415 cityhall -0.2218
+-2.6415 coffeeshop -0.2218
+-2.6415 collapsedbuilding -0.2218
+-2.6415 comunal -0.2218
+-2.6415 court -0.2218
+-2.6415 crossroad -0.2218
+-2.6415 crowded -0.2218
+-2.6415 deadpeople -0.2218
+-2.6415 emergencybuilding -0.2218
+-2.6415 emergencyoutdoor -0.2218
+-2.6415 emergencypeople -0.2218
+-2.6415 enter -0.2218
+-2.6415 family -0.2218
+-2.6415 firefighters -0.2218
+-2.6415 flooded -0.2218
+-2.6415 fountain -0.2218
+-2.6415 gasstation -0.2218
+-2.6415 goback -0.2218
+-2.6415 gohome -0.2218
+-2.6415 greeengrocery -0.2218
+-2.6415 grocery -0.2218
+-2.6415 groupofpeople -0.2218
+-2.6415 gym -0.2218
+-2.6415 hairdresser -0.2218
+-2.6415 hill -0.2218
+-2.6415 hole -0.2218
+-2.6415 hospital -0.2218
+-2.6415 hotel -0.2218
+-2.6415 injuredpeople -0.2218
+-2.6415 intersection -0.2218
+-2.6415 jail -0.2218
+-2.6415 library -0.2218
+-2.6415 mall -0.2218
+-2.6415 middleageperson -0.2218
+-2.6415 mildlyinjuredpeople -0.2218
+-2.6415 monument -0.2218
+-2.6415 museum -0.2218
+-2.6415 nofoodpeople -0.2218
+-2.6415 nomedicinepeople -0.2218
+-2.6415 nowaterpeople -0.2218
+-2.6415 object -0.2218
+-2.6415 oldperson -0.2218
+-2.6415 onfire -0.2218
+-2.6415 outdoor -0.2218
+-2.6415 panickedpeople -0.2218
+-2.6415 people -0.2218
+-2.6415 pharmacy -0.2218
+-2.6415 playground -0.2218
+-2.6415 policestation -0.2218
+-2.6415 postoffice -0.2218
+-2.6415 prison -0.2218
+-2.6415 public -0.2218
+-2.6415 railwaystation -0.2218
+-2.6415 school -0.2218
+-2.6415 severelyinjuredpeople -0.2218
+-2.6415 shop -0.2218
+-2.6415 situation -0.2218
+-2.6415 square -0.2218
+-2.6415 starvingpeople -0.2218
+-2.6415 street -0.2218
+-2.6415 students -0.2218
+-2.6415 trafficjam -0.2218
+-2.6415 youngperson -0.2218
 
 \2-grams:
--2.1584 <s> airport 0.0000
--2.1584 <s> bakery 0.0000
--2.1584 <s> bank 0.0000
--2.1584 <s> bar 0.0000
--2.1584 <s> blockedbuilding 0.0000
--2.1584 <s> blockedbydebris 0.0000
--2.1584 <s> building 0.0000
--2.1584 <s> busstop 0.0000
--2.1584 <s> butcher 0.0000
--2.1584 <s> cinema 0.0000
--2.1584 <s> cityhall 0.0000
--2.1584 <s> coffeeshop 0.0000
--2.1584 <s> collapsedbuilding 0.0000
--2.1584 <s> comunal 0.0000
--2.1584 <s> court 0.0000
--2.1584 <s> crossroad 0.0000
--2.1584 <s> crowded 0.0000
--2.1584 <s> deadpeople 0.0000
--2.1584 <s> emergencybuilding 0.0000
--2.1584 <s> emergencyoutdoor 0.0000
--2.1584 <s> emergencypeople 0.0000
--2.1584 <s> family 0.0000
--2.1584 <s> firefighters 0.0000
--2.1584 <s> flooded 0.0000
--2.1584 <s> fountain 0.0000
--2.1584 <s> gasstation 0.0000
--2.1584 <s> goback 0.0000
--2.1584 <s> gohome 0.0000
--2.1584 <s> greeengrocery 0.0000
--2.1584 <s> grocery 0.0000
--2.1584 <s> groupofpeople 0.0000
--2.1584 <s> gym 0.0000
--2.1584 <s> hairdresser 0.0000
--2.1584 <s> hill 0.0000
--2.1584 <s> hole 0.0000
--2.1584 <s> hospital 0.0000
--2.1584 <s> hotel 0.0000
--2.1584 <s> injuredpeople 0.0000
--2.1584 <s> intersection 0.0000
--2.1584 <s> jail 0.0000
--2.1584 <s> library 0.0000
--2.1584 <s> mall 0.0000
--2.1584 <s> middleageperson 0.0000
--2.1584 <s> mildlyinjuredpeople 0.0000
--2.1584 <s> monument 0.0000
--2.1584 <s> museum 0.0000
--2.1584 <s> nofoodpeople 0.0000
--2.1584 <s> nomedicinepeople 0.0000
--2.1584 <s> nowaterpeople 0.0000
--2.1584 <s> object 0.0000
--2.1584 <s> oldperson 0.0000
--2.1584 <s> onfire 0.0000
--2.1584 <s> outdoor 0.0000
--2.1584 <s> panickedpeople 0.0000
--2.1584 <s> people 0.0000
--2.1584 <s> pharmacy 0.0000
--2.1584 <s> playground 0.0000
--2.1584 <s> policestation 0.0000
--2.1584 <s> postoffice 0.0000
--2.1584 <s> prison 0.0000
--2.1584 <s> public 0.0000
--2.1584 <s> railwaystation 0.0000
--2.1584 <s> school 0.0000
--2.1584 <s> severelyinjuredpeople 0.0000
--2.1584 <s> shop 0.0000
--2.1584 <s> situation 0.0000
--2.1584 <s> square 0.0000
--2.1584 <s> starvingpeople 0.0000
--2.1584 <s> street 0.0000
--2.1584 <s> students 0.0000
--2.1584 <s> trafficjam 0.0000
--2.1584 <s> youngperson 0.0000
+-2.1644 <s> airport 0.0000
+-2.1644 <s> bakery 0.0000
+-2.1644 <s> bank 0.0000
+-2.1644 <s> bar 0.0000
+-2.1644 <s> blockedbuilding 0.0000
+-2.1644 <s> blockedbydebris 0.0000
+-2.1644 <s> building 0.0000
+-2.1644 <s> busstop 0.0000
+-2.1644 <s> butcher 0.0000
+-2.1644 <s> cinema 0.0000
+-2.1644 <s> cityhall 0.0000
+-2.1644 <s> coffeeshop 0.0000
+-2.1644 <s> collapsedbuilding 0.0000
+-2.1644 <s> comunal 0.0000
+-2.1644 <s> court 0.0000
+-2.1644 <s> crossroad 0.0000
+-2.1644 <s> crowded 0.0000
+-2.1644 <s> deadpeople 0.0000
+-2.1644 <s> emergencybuilding 0.0000
+-2.1644 <s> emergencyoutdoor 0.0000
+-2.1644 <s> emergencypeople 0.0000
+-2.1644 <s> enter 0.0000
+-2.1644 <s> family 0.0000
+-2.1644 <s> firefighters 0.0000
+-2.1644 <s> flooded 0.0000
+-2.1644 <s> fountain 0.0000
+-2.1644 <s> gasstation 0.0000
+-2.1644 <s> goback 0.0000
+-2.1644 <s> gohome 0.0000
+-2.1644 <s> greeengrocery 0.0000
+-2.1644 <s> grocery 0.0000
+-2.1644 <s> groupofpeople 0.0000
+-2.1644 <s> gym 0.0000
+-2.1644 <s> hairdresser 0.0000
+-2.1644 <s> hill 0.0000
+-2.1644 <s> hole 0.0000
+-2.1644 <s> hospital 0.0000
+-2.1644 <s> hotel 0.0000
+-2.1644 <s> injuredpeople 0.0000
+-2.1644 <s> intersection 0.0000
+-2.1644 <s> jail 0.0000
+-2.1644 <s> library 0.0000
+-2.1644 <s> mall 0.0000
+-2.1644 <s> middleageperson 0.0000
+-2.1644 <s> mildlyinjuredpeople 0.0000
+-2.1644 <s> monument 0.0000
+-2.1644 <s> museum 0.0000
+-2.1644 <s> nofoodpeople 0.0000
+-2.1644 <s> nomedicinepeople 0.0000
+-2.1644 <s> nowaterpeople 0.0000
+-2.1644 <s> object 0.0000
+-2.1644 <s> oldperson 0.0000
+-2.1644 <s> onfire 0.0000
+-2.1644 <s> outdoor 0.0000
+-2.1644 <s> panickedpeople 0.0000
+-2.1644 <s> people 0.0000
+-2.1644 <s> pharmacy 0.0000
+-2.1644 <s> playground 0.0000
+-2.1644 <s> policestation 0.0000
+-2.1644 <s> postoffice 0.0000
+-2.1644 <s> prison 0.0000
+-2.1644 <s> public 0.0000
+-2.1644 <s> railwaystation 0.0000
+-2.1644 <s> school 0.0000
+-2.1644 <s> severelyinjuredpeople 0.0000
+-2.1644 <s> shop 0.0000
+-2.1644 <s> situation 0.0000
+-2.1644 <s> square 0.0000
+-2.1644 <s> starvingpeople 0.0000
+-2.1644 <s> street 0.0000
+-2.1644 <s> students 0.0000
+-2.1644 <s> trafficjam 0.0000
+-2.1644 <s> youngperson 0.0000
 -0.3010 airport </s> -0.3010
 -0.3010 bakery </s> -0.3010
 -0.3010 bank </s> -0.3010
@@ -184,6 +186,7 @@ ngram 3=72
 -0.3010 emergencybuilding </s> -0.3010
 -0.3010 emergencyoutdoor </s> -0.3010
 -0.3010 emergencypeople </s> -0.3010
+-0.3010 enter </s> -0.3010
 -0.3010 family </s> -0.3010
 -0.3010 firefighters </s> -0.3010
 -0.3010 flooded </s> -0.3010
@@ -258,6 +261,7 @@ ngram 3=72
 -0.3010 <s> emergencybuilding </s>
 -0.3010 <s> emergencyoutdoor </s>
 -0.3010 <s> emergencypeople </s>
+-0.3010 <s> enter </s>
 -0.3010 <s> family </s>
 -0.3010 <s> firefighters </s>
 -0.3010 <s> flooded </s>
