@@ -50,47 +50,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#MildlyInjuredPeople -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#MildlyInjuredPeople">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#injuredpeople"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#SeverelyInjuredPeople"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoFoodPeople -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoFoodPeople">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#starvingpeople"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoMedicinePeople -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoMedicinePeople">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#starvingpeople"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoWaterPeople -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoWaterPeople">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#starvingpeople"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#SeverelyInjuredPeople -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#SeverelyInjuredPeople">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#injuredpeople"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#Students -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#Students">
@@ -131,9 +90,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#blockedbuilding -->
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#blocked -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#blockedbuilding">
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#blocked">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencybuilding"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -201,9 +160,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#collapsedbuilding -->
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#collapsed -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#collapsedbuilding">
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#collapsed">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#emergencybuilding"/>
     </owl:Class>
     
@@ -443,6 +402,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#mildlyinjured -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#mildlyinjured">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#injuredpeople"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#severelyinjuredpeople"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#monument -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#monument">
@@ -455,6 +423,30 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#museum">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#nofood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#nofood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#starvingpeople"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#nomedicinepeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#nomedicinepeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#starvingpeople"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#nowaterpeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#nowaterpeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#starvingpeople"/>
     </owl:Class>
     
 
@@ -570,6 +562,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#severelyinjuredpeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#severelyinjuredpeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#injuredpeople"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#shop -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#shop">
@@ -632,14 +632,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoFoodPeople"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoMedicinePeople"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#NoWaterPeople"/>
-        </owl:members>
-    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
@@ -707,6 +699,14 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#panickedpeople"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#starvingpeople"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#youngperson"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#nofood"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#nomedicinepeople"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23#nowaterpeople"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>

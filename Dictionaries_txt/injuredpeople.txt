@@ -1,5 +1,5 @@
-MildlyInjuredPeople
-SeverelyInjuredPeople
+mildlyinjured
+severelyinjuredpeople
 goback
 gohome
 enter

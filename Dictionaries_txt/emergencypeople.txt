@@ -1,6 +1,6 @@
+deadpeople
 injuredpeople
 starvingpeople
-deadpeople
 panickedpeople
 goback
 gohome

@@ -75,12 +75,12 @@ if __name__ == '__main__':
 
     for i in keys:
         set=obj[i]
-        file=open("Dictionaries_txt/"+str(i)+".txt","w+")
+        file=open(g.DICTDIRTXT+str(i)+".txt","w+")
         for word in set:
             file.write(word+"\n")
 
     # All words and commands to recognize for the language model
-    file=open("Dictionaries_txt/total_list.txt","w+")
+    file=open(g.CHECKDIR+"total_list(for lm).txt","w+")
     for each in commands_list:
         file.write(each+"\n")
 

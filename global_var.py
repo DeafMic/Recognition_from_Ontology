@@ -7,4 +7,4 @@ LANGDIR="Decoder_config/Lang_model/"
 #global CHECKDIR
 CHECKDIR="Check_txt/"
 #global DICTDIRTXT
-DICTDIRTXT = "Dictionaries_txt"
+DICTDIRTXT = "Dictionaries_txt/"

@@ -1,0 +1,1 @@
+tr '[:upper:]' '[:lower:]' < 4726.lm > model.lm
