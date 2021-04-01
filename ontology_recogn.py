@@ -28,6 +28,7 @@ MODELDIR = g.MODELDIR
 DICTDIR = g.DICTDIR
 LANGDIR = g.LANGDIR
 CHECKDIR = g.CHECKDIR
+ONTODIR=g.ONTODIR
 
 
 
@@ -35,7 +36,7 @@ CHECKDIR = g.CHECKDIR
 
 
 # Import and load the ontology from the owl file
-onto = get_ontology("Ontology/MEUS.owl")
+onto = get_ontology(ONTODIR)
 onto.load()
 
 
@@ -123,9 +124,9 @@ def decode_speech(stream, Decoder):
             if decoder.get_in_speech() != in_speech_bf:
                 in_speech_bf = decoder.get_in_speech()
                 if not in_speech_bf:
-                    for best, i in zip(decoder.nbest(), range(15)):
-                        print("Result", best.hypstr,
-                                "model score", best.score)
+                    # for best, i in zip(decoder.nbest(), range(15)):
+                    #     print("Result", best.hypstr,
+                    #             "model score", best.score)
                     decoder.end_utt()
 
                     try:
@@ -201,7 +202,7 @@ if __name__ == '__main__':
     config.set_string('-hmm', MODELDIR)
     config.set_string('-logfn', 'shinx.log')
     config.set_string('-lm', LANGDIR+"model.lm")
-    config.set_float('-vad_threshold',3.5)        
+    config.set_float('-vad_threshold',3.6)        
     #config.set_int('-vad_postspeech',40)
 
 
@@ -244,7 +245,7 @@ if __name__ == '__main__':
       
         ## Check for special words
 
-        if 'goback' in word:
+        if word=='goback':
 
             try:
                 getattr(FSM, "to_"+state_history[-2])()
@@ -255,7 +256,7 @@ if __name__ == '__main__':
                 print("failed going back")
 
 
-        elif 'gohome' in word:
+        elif word=='gohome':
             
             try:
                 getattr(FSM, "to_"+initial)()
@@ -263,7 +264,7 @@ if __name__ == '__main__':
             except:
                 print('failed going home')
 
-        elif 'enter' in word:
+        elif word=='enter':
 
             word_to_publish = FSM.state
 

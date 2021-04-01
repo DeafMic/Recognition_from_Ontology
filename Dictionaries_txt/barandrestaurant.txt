@@ -1,0 +1,10 @@
+bar
+butcher
+fastfood
+kebab
+pizzeria
+restaurant
+sushi
+goback
+gohome
+enter

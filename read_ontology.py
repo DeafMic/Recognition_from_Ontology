@@ -1,8 +1,9 @@
 from owlready2 import *
 import random
+import global_var as g
 
 # Import and load the ontology from the owl file
-onto = get_ontology("ontology/MEUS.owl")
+onto = get_ontology(g.ONTODIR)
 onto.load()
 
 

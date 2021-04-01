@@ -1,0 +1,14 @@
+atm
+bank
+cinema
+designer
+gym
+hairdresser
+hotel
+library
+massage
+museum
+studio
+goback
+gohome
+enter

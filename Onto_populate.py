@@ -5,7 +5,7 @@ import glob
 import global_var as g
 
 # Import and load the ontology from the owl file
-onto = get_ontology("Ontology/MEUS.owl")
+onto = get_ontology(g.ONTODIR)
 onto.load()
 
 commands_list=['goback','gohome','enter']
@@ -70,6 +70,7 @@ if __name__ == '__main__':
     ## Saving data
 
     clear_dir(DATA_DIR)
+    clear_dir(g.CHECKDIR)
 
     # Dictionaries
 
@@ -102,6 +103,11 @@ if __name__ == '__main__':
     for each in commands_list:
 
         file.write(each+"\n")
+
+    #All words without special commands
+    file=open(g.DICTDIRTXT+"all_classes.txt","w+")
+    for each in all_classes:
+        file.write(each.name+"\n")
         
 
 

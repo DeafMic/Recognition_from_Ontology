@@ -1,11 +1,14 @@
 bakery
-butcher
-coffeeshop
+clothes
+fishmarket
 gasstation
 greeengrocery
 grocery
-hairdresser
+mall
+newsstand
 pharmacy
+repair
+tobacco
 goback
 gohome
 enter

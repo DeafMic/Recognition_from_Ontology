@@ -1,0 +1,11 @@
+cityhall
+court
+firestation
+hospital
+jail
+postoffice
+prison
+school
+goback
+gohome
+enter

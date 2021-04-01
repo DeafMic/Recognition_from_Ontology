@@ -1,6 +1,8 @@
-public
+barandrestaurant
+privateservice
+publicbuilding
 shop
-comunal
+transport
 goback
 gohome
 enter

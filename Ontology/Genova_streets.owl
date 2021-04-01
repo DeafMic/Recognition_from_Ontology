@@ -1,0 +1,826 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23">
+    <Prefix name="" IRI="http://www.semanticweb.org/anton/ontologies/2020/11/untitled-ontology-23"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Family"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Students"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#airport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#antiquedoor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#arch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#atm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bakery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#barandrestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#blocked"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#blockedbydebris"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#busstation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#busstop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#butcher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cinema"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cityhall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#clothes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#collapsed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#court"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#crossroad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#crowded"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#deadpeople"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#designer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#emergencybuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#emergencyoutdoor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#emergencypeople"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fastfood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#firestation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fishmarket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#flooded"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gasstation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#graffiti"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#greeengrocery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grocery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#groupofpeople"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gym"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hairdresser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hospital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hydrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#injuredpeople"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#jail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#kebab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#library"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#massage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#middleageperson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mildlyinjured"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#monument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#museum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#newsstand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#nofood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#nomedicinepeople"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#nowaterpeople"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#oldperson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#onfire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#panickedpeople"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#people"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pharmacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pizzeria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#playground"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#postoffice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#prison"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#privateservice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#publicbuilding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#railwaystation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#repair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#restaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#school"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#severelyinjuredpeople"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#shop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#shrine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#smallsquare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#square"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#starvingpeople"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#statue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#street"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#studio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sushi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tobacco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trafficjam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trafficsign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#truck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#youngperson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasObject"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Family"/>
+        <Class IRI="#groupofpeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Students"/>
+        <Class IRI="#groupofpeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#airport"/>
+        <Class IRI="#transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#antiquedoor"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#arch"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#atm"/>
+        <Class IRI="#privateservice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bakery"/>
+        <Class IRI="#shop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bank"/>
+        <Class IRI="#privateservice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bar"/>
+        <Class IRI="#barandrestaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#barandrestaurant"/>
+        <Class IRI="#building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#blocked"/>
+        <Class IRI="#emergencybuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#blocked"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasObject"/>
+            <Class IRI="#building"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#blockedbydebris"/>
+        <Class IRI="#emergencyoutdoor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#building"/>
+        <Class IRI="#object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#busstation"/>
+        <Class IRI="#transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#busstop"/>
+        <Class IRI="#transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#butcher"/>
+        <Class IRI="#barandrestaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#car"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cinema"/>
+        <Class IRI="#privateservice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cityhall"/>
+        <Class IRI="#publicbuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#clothes"/>
+        <Class IRI="#shop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#collapsed"/>
+        <Class IRI="#emergencybuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#court"/>
+        <Class IRI="#publicbuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#crossroad"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#crowded"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deadpeople"/>
+        <Class IRI="#emergencypeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#designer"/>
+        <Class IRI="#privateservice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#emergencybuilding"/>
+        <Class IRI="#situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#emergencybuilding"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasObject"/>
+            <Class IRI="#building"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#emergencyoutdoor"/>
+        <Class IRI="#situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#emergencyoutdoor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasObject"/>
+            <Class IRI="#street"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#emergencypeople"/>
+        <Class IRI="#situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#emergencypeople"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasObject"/>
+            <Class IRI="#people"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fastfood"/>
+        <Class IRI="#barandrestaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#firestation"/>
+        <Class IRI="#publicbuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fishmarket"/>
+        <Class IRI="#shop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#flooded"/>
+        <Class IRI="#emergencybuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fountain"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gasstation"/>
+        <Class IRI="#shop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gate"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#graffiti"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#greeengrocery"/>
+        <Class IRI="#shop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grocery"/>
+        <Class IRI="#shop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#groupofpeople"/>
+        <Class IRI="#people"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gym"/>
+        <Class IRI="#privateservice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hairdresser"/>
+        <Class IRI="#privateservice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hill"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hole"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hospital"/>
+        <Class IRI="#publicbuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hotel"/>
+        <Class IRI="#privateservice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hydrant"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#injuredpeople"/>
+        <Class IRI="#emergencypeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#jail"/>
+        <Class IRI="#publicbuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#kebab"/>
+        <Class IRI="#barandrestaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#library"/>
+        <Class IRI="#privateservice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mall"/>
+        <Class IRI="#shop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#massage"/>
+        <Class IRI="#privateservice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#middleageperson"/>
+        <Class IRI="#people"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mildlyinjured"/>
+        <Class IRI="#injuredpeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#monument"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#museum"/>
+        <Class IRI="#privateservice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#newsstand"/>
+        <Class IRI="#shop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nofood"/>
+        <Class IRI="#starvingpeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nomedicinepeople"/>
+        <Class IRI="#starvingpeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nowaterpeople"/>
+        <Class IRI="#starvingpeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#oldperson"/>
+        <Class IRI="#people"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#onfire"/>
+        <Class IRI="#emergencybuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#panickedpeople"/>
+        <Class IRI="#emergencypeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#people"/>
+        <Class IRI="#object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pharmacy"/>
+        <Class IRI="#shop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pizzeria"/>
+        <Class IRI="#barandrestaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#playground"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#postoffice"/>
+        <Class IRI="#publicbuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#prison"/>
+        <Class IRI="#publicbuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#privateservice"/>
+        <Class IRI="#building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#publicbuilding"/>
+        <Class IRI="#building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#railwaystation"/>
+        <Class IRI="#transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#repair"/>
+        <Class IRI="#shop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#restaurant"/>
+        <Class IRI="#barandrestaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#school"/>
+        <Class IRI="#publicbuilding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#severelyinjuredpeople"/>
+        <Class IRI="#injuredpeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#shop"/>
+        <Class IRI="#building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#shrine"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#smallsquare"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#square"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#starvingpeople"/>
+        <Class IRI="#emergencypeople"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#statue"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#street"/>
+        <Class IRI="#object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#studio"/>
+        <Class IRI="#privateservice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sushi"/>
+        <Class IRI="#barandrestaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tobacco"/>
+        <Class IRI="#shop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trafficjam"/>
+        <Class IRI="#emergencyoutdoor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trafficsign"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#transport"/>
+        <Class IRI="#building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#truck"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#youngperson"/>
+        <Class IRI="#people"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Family"/>
+        <Class IRI="#Students"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#bakery"/>
+        <Class IRI="#butcher"/>
+        <Class IRI="#gasstation"/>
+        <Class IRI="#greeengrocery"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#building"/>
+        <Class IRI="#emergencybuilding"/>
+        <Class IRI="#emergencyoutdoor"/>
+        <Class IRI="#emergencypeople"/>
+        <Class IRI="#people"/>
+        <Class IRI="#street"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#building"/>
+        <Class IRI="#people"/>
+        <Class IRI="#situation"/>
+        <Class IRI="#street"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#building"/>
+        <Class IRI="#people"/>
+        <Class IRI="#street"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#deadpeople"/>
+        <Class IRI="#groupofpeople"/>
+        <Class IRI="#injuredpeople"/>
+        <Class IRI="#oldperson"/>
+        <Class IRI="#panickedpeople"/>
+        <Class IRI="#starvingpeople"/>
+        <Class IRI="#youngperson"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#mildlyinjured"/>
+        <Class IRI="#severelyinjuredpeople"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#nofood"/>
+        <Class IRI="#nomedicinepeople"/>
+        <Class IRI="#nowaterpeople"/>
+    </DisjointClasses>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasObject"/>
+        <Class IRI="#situation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasObject"/>
+        <Class IRI="#object"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#antiquedoor</IRI>
+        <Literal>antique door</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#barandrestaurant</IRI>
+        <Literal>Bar and Restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#busstation</IRI>
+        <Literal>bus station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#busstop</IRI>
+        <Literal>bus stop</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#firestation</IRI>
+        <Literal>fire station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#gasstation</IRI>
+        <Literal>gas station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#greeengrocery</IRI>
+        <Literal>green grocery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#newsstand</IRI>
+        <Literal>news stand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#postoffice</IRI>
+        <Literal>post office</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#privateservice</IRI>
+        <Literal>Private Service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#publicbuilding</IRI>
+        <Literal>Public building</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#railwaystation</IRI>
+        <Literal>railway station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#smallsquare</IRI>
+        <Literal>small square</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#trafficsign</IRI>
+        <Literal>traffic sign</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

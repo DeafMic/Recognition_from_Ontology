@@ -1,0 +1,7 @@
+airport
+busstation
+busstop
+railwaystation
+goback
+gohome
+enter

@@ -1,7 +1,7 @@
 deadpeople
 injuredpeople
-starvingpeople
 panickedpeople
+starvingpeople
 goback
 gohome
 enter

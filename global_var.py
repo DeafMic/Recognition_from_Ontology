@@ -1,5 +1,5 @@
-global MODELDIR,DICTDIR,LANGDIR,CHECKDIR,DICTDIRTXT
-MODELDIR="Decoder_config/Acoustic_model/en-us"
+global MODELDIR,DICTDIR,LANGDIR,CHECKDIR,DICTDIRTXT,ONTODIR
+MODELDIR="Decoder_config/Acoustic_model/en-us(new)"
 #global DICTDIR
 DICTDIR = "Decoder_config/Dictionaries_dic/"
 #global LANGDIR
@@ -8,3 +8,4 @@ LANGDIR="Decoder_config/Lang_model/"
 CHECKDIR="Check_txt/"
 #global DICTDIRTXT
 DICTDIRTXT = "Dictionaries_txt/"
+ONTODIR="Ontology/Genova_streets.owl"

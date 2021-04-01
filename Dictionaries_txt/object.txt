@@ -1,6 +1,6 @@
 building
-outdoor
 people
+street
 goback
 gohome
 enter
