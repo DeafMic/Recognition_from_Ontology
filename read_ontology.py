@@ -102,5 +102,5 @@ def get_cls_at_dist(start_cls_name, distance):
     return random.choice(dictionary[distance])
 
 
-# seen_situation = get_cls_at_dist(onto.CollapsedBuilding, 2)
+seen_situation = get_cls_at_dist(onto.Students, 2)
 # print(seen_situation)
