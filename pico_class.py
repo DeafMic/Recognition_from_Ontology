@@ -2,15 +2,20 @@ import argparse
 import os
 import struct
 import sys
-from threading import Thread
+from threading import Thread, current_thread
 
 import numpy as np
 import pyaudio
 import soundfile
 from picovoice import Picovoice
-
+import rospy
+import std_msgs.msg
 
 class PicovoiceDemo(Thread):
+    current_word=None
+    understood=None
+    pub=rospy.Publisher('chatter', std_msgs.msg.String, queue_size=10)
+    rate=None
     def __init__(
             self,
             keyword_path,
@@ -37,6 +42,12 @@ class PicovoiceDemo(Thread):
             rhino_sensitivity=rhino_sensitivity)
 
         self.output_path = output_path
+        self.current_word=''
+        self.understood=False
+        self.pub = rospy.Publisher('chatter', std_msgs.msg.String, queue_size=10)
+        rospy.init_node('word_publisher', anonymous=True)
+        self.rate = rospy.Rate(10)  # 10h
+
         if self.output_path is not None:
             self._recorded_frames = list()
 
@@ -44,16 +55,20 @@ class PicovoiceDemo(Thread):
     def _wake_word_callback():
         print('[wake word]\n')
 
-    @staticmethod
-    def _inference_callback(inference):
+    @classmethod
+    def _inference_callback(self,inference):
         if inference.is_understood:
+            
+
             print('{')
             print("  intent : '%s'" % inference.intent)
             print('  slots : {')
             for slot, value in inference.slots.items():
+                self.pub.publish(value)
                 print("    %s : '%s'" % (slot, value))
             print('  }')
             print('}\n')
+            
         else:
             print("Didn't understand the command.\n")
 
@@ -73,14 +88,16 @@ class PicovoiceDemo(Thread):
 
             print('[Listening ...]')
 
-            while True:
+            while not rospy.is_shutdown():
+                self.understood=False
                 pcm = audio_stream.read(self._picovoice.frame_length)
                 pcm = struct.unpack_from("h" * self._picovoice.frame_length, pcm)
 
                 if self.output_path is not None:
                     self._recorded_frames.append(pcm)
-
+                self.understood=False
                 self._picovoice.process(pcm)
+                #self.rate.sleep()
         except KeyboardInterrupt:
             sys.stdout.write('\b' * 2)
             print('Stopping ...')
@@ -112,3 +129,28 @@ class PicovoiceDemo(Thread):
             print(', '.join("'%s': '%s'" % (k, str(info[k])) for k in fields))
 
         pa.terminate()
+
+    @classmethod
+    def get_word(self):
+       
+        return self.current_word
+        
+             
+    @classmethod
+    def get_understood(self):
+        return self.understood
+
+
+if __name__=="__main__":
+    recognizer=PicovoiceDemo(
+                    keyword_path='/home/mike/catkin_ws/src/recognition/porcupine/resources/keyword_files/linux/alexa_linux.ppn',
+                    context_path='/home/mike/Picovoice/street_en_linux_2021-05-19-utc_v1_6_0.rhn',
+                    # porcupine_library_path=args.porcupine_library_path,
+                    # porcupine_model_path=args.porcupine_model_path,
+                    # porcupine_sensitivity=args.porcupine_sensitivity,
+                    # rhino_library_path=args.rhino_library_path,
+                    # rhino_model_path=args.rhino_model_path,
+                    # rhino_sensitivity=args.rhino_sensitivity,
+                    # output_path=os.path.expanduser(args.output_path) if args.output_path is not None else None).run()
+        )
+    recognizer.run()
