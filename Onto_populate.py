@@ -107,7 +107,8 @@ if __name__ == '__main__':
     #All words without special commands
     file=open(g.DICTDIRTXT+"all_classes.txt","w+")
     for each in all_classes:
-        file.write(each.name+"\n")
+
+        file.write(each.name.replace("_"," ")+"\n")
         
 
 

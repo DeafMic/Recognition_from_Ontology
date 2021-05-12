@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 import argparse
 import os
 import struct
@@ -14,7 +16,7 @@ import std_msgs.msg
 class PicovoiceDemo(Thread):
     current_word=None
     understood=None
-    pub=rospy.Publisher('chatter', std_msgs.msg.String, queue_size=10)
+    pub=rospy.Publisher('chatter_word', std_msgs.msg.String, queue_size=10)
     rate=None
     def __init__(
             self,
@@ -44,7 +46,7 @@ class PicovoiceDemo(Thread):
         self.output_path = output_path
         self.current_word=''
         self.understood=False
-        self.pub = rospy.Publisher('chatter', std_msgs.msg.String, queue_size=10)
+        self.pub = rospy.Publisher('chatter_word', std_msgs.msg.String, queue_size=10)
         rospy.init_node('word_publisher', anonymous=True)
         self.rate = rospy.Rate(10)  # 10h
 
@@ -143,7 +145,7 @@ class PicovoiceDemo(Thread):
 
 if __name__=="__main__":
     recognizer=PicovoiceDemo(
-                    keyword_path='/home/mike/catkin_ws/src/recognition/porcupine/resources/keyword_files/linux/alexa_linux.ppn',
+                    keyword_path='/home/mike/catkin_ws/src/recognition/porcupine/resources/keyword_files/linux/hey barista_linux.ppn',
                     context_path='/home/mike/Picovoice/street_en_linux_2021-05-19-utc_v1_6_0.rhn',
                     # porcupine_library_path=args.porcupine_library_path,
                     # porcupine_model_path=args.porcupine_model_path,

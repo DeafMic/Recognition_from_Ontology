@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 from owlready2 import *
 import random
 import os
@@ -6,12 +7,8 @@ import global_var as g
 import rospy
 import std_msgs.msg as std
 from pico_class import PicovoiceDemo
+os.chdir(sys.path[0])
 
-global all_words
-
-
-onto = get_ontology(g.ONTODIR)
-onto.load()
 with open("Dictionaries_txt/all_classes.txt","r") as f:
         all_words=f.read().splitlines()
         f.close
@@ -23,20 +20,16 @@ def callback(word):
     
     for each in all_words:
         if word==each:
-            
+            print("WORD IS ",word)
             pub.publish(all_words.index(each))
 
 
 
 def listener():
-    rospy.init_node('listener', anonymous=True)
+    rospy.init_node('listener_for_word', anonymous=True)
 
-    rospy.Subscriber("chatter", std.String, callback)
+    rospy.Subscriber("chatter_word", std.String, callback)
 
-    # while not rospy.is_shutdown():
-    #     if index:
-    #         pub.publish(index)
-    #     rospy.sleep(1)
     rospy.spin()
 
 

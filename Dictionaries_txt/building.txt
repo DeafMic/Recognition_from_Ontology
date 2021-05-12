@@ -1,6 +1,6 @@
-barandrestaurant
-privateservice
-publicbuilding
+Bar_and_Restaurant
+Private_Service
+Public_Building
 shop
 transport
 goback

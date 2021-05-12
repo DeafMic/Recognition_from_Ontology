@@ -1,11 +1,11 @@
 bakery
 clothes
 fishmarket
-gasstation
-greeengrocery
+gas_station
+greeen_grocery
 grocery
 mall
-newsstand
+news_stand
 pharmacy
 repair
 tobacco

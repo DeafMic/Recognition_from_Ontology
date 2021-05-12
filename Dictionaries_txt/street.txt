@@ -12,7 +12,7 @@ hydrant
 monument
 playground
 shrine
-smallsquare
+small_square
 square
 statue
 trafficsign

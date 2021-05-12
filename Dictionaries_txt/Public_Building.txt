@@ -1,9 +1,9 @@
 cityhall
 court
-firestation
+fire_station
 hospital
 jail
-postoffice
+post_office
 prison
 school
 goback

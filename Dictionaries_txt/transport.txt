@@ -1,7 +1,7 @@
 airport
-busstation
-busstop
-railwaystation
+bus_station
+bus_stop
+railway_station
 goback
 gohome
 enter
