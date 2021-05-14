@@ -17,12 +17,15 @@ pub = rospy.Publisher('index', std.Int16, queue_size=10)
 
 def callback(word):
     word=word.data
-    
+    success=False
     for each in all_words:
         if word==each:
+            success=True
             print("WORD IS ",word)
             pub.publish(all_words.index(each))
-
+    
+    if success==False:
+        print("ERROR: The word ",word," is not in the list")
 
 
 def listener():
