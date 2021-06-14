@@ -12,6 +12,9 @@ import soundfile
 from picovoice import Picovoice
 import rospy
 import std_msgs.msg
+from audio_common_msgs.msg import AudioData
+
+current_piece=''
 
 class PicovoiceDemo(Thread):
     current_word=None
@@ -48,6 +51,8 @@ class PicovoiceDemo(Thread):
         self.understood=False
         self.pub = rospy.Publisher('chatter_word', std_msgs.msg.String, queue_size=10)
         rospy.init_node('word_publisher', anonymous=True)
+        
+        
         self.rate = rospy.Rate(10)  # 10h
 
         if self.output_path is not None:
@@ -94,7 +99,11 @@ class PicovoiceDemo(Thread):
                 self.understood=False
                 pcm = audio_stream.read(self._picovoice.frame_length)                
                 pcm = struct.unpack_from("h" * self._picovoice.frame_length, pcm)
-
+                if current_piece:
+                    pcm=struct.unpack_from("h" * self._picovoice.frame_length,current_piece)
+                    
+                    print(current_piece)
+                #print(current_piece)
                 if self.output_path is not None:
                     self._recorded_frames.append(pcm)
                 self.understood=False
@@ -155,4 +164,37 @@ if __name__=="__main__":
                     # rhino_sensitivity=args.rhino_sensitivity,
                     # output_path=os.path.expanduser(args.output_path) if args.output_path is not None else None).run()
         )
-    recognizer.run()
+    
+    def subscriber():
+        def callback(data):
+            #print(data.data)
+            global current_piece
+            current_piece=data.data
+            #print(current_piece)
+
+        #rospy.init_node('read_stream', anonymous=True)
+
+        rospy.Subscriber("/audio/audio", AudioData, callback)
+
+        rospy.spin()
+        
+
+    def print_audio():
+         while not rospy.is_shutdown():
+            if current_piece: 
+                print(current_piece)
+        
+
+    # x = Thread(target=recognizer.run(), args=(1,))
+    # x.start()
+    # y = Thread(target=subscriber(),args=(1,))
+    # y.start()
+    y = Thread(target=subscriber)
+    z = Thread(target=recognizer.run)
+    y.setDaemon(True)
+    z.setDaemon(True)
+    y.start()
+    z.start()
+    while not rospy.is_shutdown():
+        pass
+    
