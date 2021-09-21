@@ -297,6 +297,9 @@
     <Declaration>
         <ObjectProperty IRI="#hasObject"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#atm"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#Bar_and_Restaurant"/>
         <Class IRI="#building"/>
@@ -374,7 +377,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#butcher"/>
-        <Class IRI="#Bar_and_Restaurant"/>
+        <Class IRI="#shop"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#car"/>
