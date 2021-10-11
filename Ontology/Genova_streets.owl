@@ -298,7 +298,13 @@
         <ObjectProperty IRI="#hasObject"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasSynonym"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#atm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jail"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Bar_and_Restaurant"/>
@@ -743,6 +749,20 @@
         <Class IRI="#nomedicinepeople"/>
         <Class IRI="#nowaterpeople"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#jail"/>
+        <NamedIndividual IRI="#jail"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSynonym"/>
+        <NamedIndividual IRI="#jail"/>
+        <Literal>edfefef</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSynonym"/>
+        <NamedIndividual IRI="#jail"/>
+        <Literal>mkomkmk</Literal>
+    </DataPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasObject"/>
         <Class IRI="#situation"/>
@@ -795,6 +815,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#greeen_grocery</IRI>
         <Literal>green grocery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#jail</IRI>
+        <Literal>Prison</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#jail</IRI>
+        <Literal>danger</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

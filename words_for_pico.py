@@ -8,7 +8,7 @@ import global_var as g
 onto = get_ontology(g.ONTODIR)
 onto.load()
 
-commands_list=['goback','gohome','enter']
+
 
 detect_words=[]
 
@@ -50,7 +50,7 @@ if __name__ == '__main__':
         if children:
             subclass=subclass.name
             children=[each.name for each in children]
-            children.extend(commands_list)
+      
             obj[str(subclass)] = children
         else:
             detect_words.append(subclass.name)
@@ -81,9 +81,7 @@ if __name__ == '__main__':
             file.write(word+"\n")
 
     # All words and commands to recognize for the language model
-    file=open(g.CHECKDIR+"total_list(for lm).txt","w+")
-    for each in commands_list:
-        file.write(each+"\n")
+   
 
     for each in all_classes:
         file.write(each.name+"\n")
@@ -96,13 +94,9 @@ if __name__ == '__main__':
 
         file.write(each+"\n")
 
-    # Commands file list
 
-    file=open(g.CHECKDIR+"special_commands.txt","w+")
 
-    for each in commands_list:
-
-        file.write(each+"\n")
+    
 
     #All words without special commands
     file=open(g.DICTDIRTXT+"all_classes.txt","w+")
