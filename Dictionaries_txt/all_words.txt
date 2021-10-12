@@ -1,0 +1,96 @@
+Bar and Restaurant
+Family
+Private Service
+Public Building
+Students
+airport
+antiquedoor
+arch
+atm
+bakery
+bank
+bar
+blocked
+blockedbydebris
+building
+bus station
+bus stop
+butcher
+car
+cinema
+cityhall
+clothes
+collapsed
+court
+crossroad
+crowded
+deadpeople
+designer
+emergencybuilding
+emergencyoutdoor
+emergencypeople
+fastfood
+fire station
+fishmarket
+flooded
+fountain
+gas station
+gate
+graffiti
+greeen grocery
+grocery
+groupofpeople
+gym
+hairdresser
+hill
+hole
+hospital
+hotel
+hydrant
+injuredpeople
+jail
+Prison
+danger
+kebab
+library
+mall
+massage
+middleageperson
+mildlyinjured
+monument
+museum
+news stand
+nofood
+nomedicinepeople
+nowaterpeople
+object
+oldperson
+onfire
+panickedpeople
+people
+pharmacy
+pizzeria
+playground
+post office
+prison
+railway station
+repair
+restaurant
+school
+severelyinjuredpeople
+shop
+shrine
+situation
+small square
+square
+starvingpeople
+statue
+street
+studio
+sushi
+tobacco
+trafficjam
+trafficsign
+transport
+truck
+youngperson

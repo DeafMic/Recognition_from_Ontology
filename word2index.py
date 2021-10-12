@@ -9,17 +9,23 @@ import std_msgs.msg as std
 from pico_class import PicovoiceDemo
 os.chdir(sys.path[0])
 
-with open("Dictionaries_txt/all_classes.txt","r") as f:
+with open("Dictionaries_txt/all_words.txt","r") as f:
         all_words=f.read().splitlines()
         f.close
-
+onto = get_ontology(g.ONTODIR)
+onto.load()
 pub = rospy.Publisher('index', std.Int16, queue_size=10)
-
+all_classes = list(onto.classes())
 def callback(word):
     word=word.data
     success=False
     for each in all_words:
         if word==each:
+            for each in all_classes:
+                for eachcom in each.comment:
+
+                    if word==eachcom:
+                        word = each.name
             success=True
             print("WORD IS ",word)
             pub.publish(all_words.index(each))

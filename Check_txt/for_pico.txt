@@ -1,0 +1,100 @@
+      - Bar and Restaurant
+      - Family
+      - Private Service
+      - Public Building
+      - Students
+      - airport
+      - antique door
+      - arch
+      - atm
+      - bakery
+      - bank
+      - bar
+      - blocked
+      - blocked by debris
+      - building
+      - bus station
+      - bus stop
+      - butcher
+      - car
+      - cinema
+      - movie theater
+      - city hall
+      - clothes
+      - shoes store
+      - collapsed
+      - court
+      - crossroad
+      - crowded
+      - dead people
+      - designer
+      - emergency building
+      - emergency outdoor
+      - emergency people
+      - fastfood
+      - fire station
+      - fishmarket
+      - flooded
+      - fountain
+      - gas station
+      - gate
+      - graffiti
+      - green grocery
+      - grocery
+      - group of people
+      - gym
+      - hairdresser
+      - hill
+      - hole
+      - hospital
+      - hotel
+      - hydrant
+      - injured people
+      - jail
+      - Prison
+      - danger
+      - kebab
+      - library
+      - mall
+      - department store
+      - massage
+      - middle age person
+      - mildly injured
+      - monument
+      - museum
+      - news stand
+      - no food
+      - no medicine people
+      - no water people
+      - object
+      - old person
+      - on fire
+      - panicked people
+      - people
+      - pharmacy
+      - drug store
+      - pizzeria
+      - playground
+      - post office
+      - railway station
+      - train station
+      - repair
+      - restaurant
+      - school
+      - severely injured people
+      - shop
+      - shrine
+      - situation
+      - small square
+      - square
+      - starving people
+      - statue
+      - street
+      - studio
+      - sushi
+      - tobacco
+      - traffic jam
+      - traffic sign
+      - transport
+      - truck
+      - young person

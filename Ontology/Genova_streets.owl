@@ -31,7 +31,7 @@
         <Class IRI="#airport"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#antiquedoor"/>
+        <Class IRI="#antique_door"/>
     </Declaration>
     <Declaration>
         <Class IRI="#arch"/>
@@ -52,7 +52,7 @@
         <Class IRI="#blocked"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#blockedbydebris"/>
+        <Class IRI="#blocked_by_debris"/>
     </Declaration>
     <Declaration>
         <Class IRI="#building"/>
@@ -73,7 +73,7 @@
         <Class IRI="#cinema"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#cityhall"/>
+        <Class IRI="#city_hall"/>
     </Declaration>
     <Declaration>
         <Class IRI="#clothes"/>
@@ -91,19 +91,19 @@
         <Class IRI="#crowded"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#deadpeople"/>
+        <Class IRI="#dead_people"/>
     </Declaration>
     <Declaration>
         <Class IRI="#designer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#emergencybuilding"/>
+        <Class IRI="#emergency_building"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#emergencyoutdoor"/>
+        <Class IRI="#emergency_outdoor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#emergencypeople"/>
+        <Class IRI="#emergency_people"/>
     </Declaration>
     <Declaration>
         <Class IRI="#fastfood"/>
@@ -130,13 +130,13 @@
         <Class IRI="#graffiti"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#greeen_grocery"/>
+        <Class IRI="#green_grocery"/>
     </Declaration>
     <Declaration>
         <Class IRI="#grocery"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#groupofpeople"/>
+        <Class IRI="#group_of_people"/>
     </Declaration>
     <Declaration>
         <Class IRI="#gym"/>
@@ -160,7 +160,7 @@
         <Class IRI="#hydrant"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#injuredpeople"/>
+        <Class IRI="#injured_people"/>
     </Declaration>
     <Declaration>
         <Class IRI="#jail"/>
@@ -178,10 +178,10 @@
         <Class IRI="#massage"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#middleageperson"/>
+        <Class IRI="#middle_age_person"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#mildlyinjured"/>
+        <Class IRI="#mildly_injured"/>
     </Declaration>
     <Declaration>
         <Class IRI="#monument"/>
@@ -193,25 +193,25 @@
         <Class IRI="#news_stand"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#nofood"/>
+        <Class IRI="#no_food"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#nomedicinepeople"/>
+        <Class IRI="#no_medicine_people"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#nowaterpeople"/>
+        <Class IRI="#no_water_people"/>
     </Declaration>
     <Declaration>
         <Class IRI="#object"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#oldperson"/>
+        <Class IRI="#old_person"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#onfire"/>
+        <Class IRI="#on_fire"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#panickedpeople"/>
+        <Class IRI="#panicked_people"/>
     </Declaration>
     <Declaration>
         <Class IRI="#people"/>
@@ -229,9 +229,6 @@
         <Class IRI="#post_office"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#prison"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#railway_station"/>
     </Declaration>
     <Declaration>
@@ -244,7 +241,7 @@
         <Class IRI="#school"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#severelyinjuredpeople"/>
+        <Class IRI="#severely_injured_people"/>
     </Declaration>
     <Declaration>
         <Class IRI="#shop"/>
@@ -262,7 +259,7 @@
         <Class IRI="#square"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#starvingpeople"/>
+        <Class IRI="#starving_people"/>
     </Declaration>
     <Declaration>
         <Class IRI="#statue"/>
@@ -280,10 +277,10 @@
         <Class IRI="#tobacco"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#trafficjam"/>
+        <Class IRI="#traffic_jam"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#trafficsign"/>
+        <Class IRI="#traffic_sign"/>
     </Declaration>
     <Declaration>
         <Class IRI="#transport"/>
@@ -292,7 +289,7 @@
         <Class IRI="#truck"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#youngperson"/>
+        <Class IRI="#young_person"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasObject"/>
@@ -312,7 +309,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Family"/>
-        <Class IRI="#groupofpeople"/>
+        <Class IRI="#group_of_people"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Private_Service"/>
@@ -324,14 +321,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Students"/>
-        <Class IRI="#groupofpeople"/>
+        <Class IRI="#group_of_people"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#airport"/>
         <Class IRI="#transport"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#antiquedoor"/>
+        <Class IRI="#antique_door"/>
         <Class IRI="#street"/>
     </SubClassOf>
     <SubClassOf>
@@ -356,7 +353,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#blocked"/>
-        <Class IRI="#emergencybuilding"/>
+        <Class IRI="#emergency_building"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#blocked"/>
@@ -366,8 +363,8 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#blockedbydebris"/>
-        <Class IRI="#emergencyoutdoor"/>
+        <Class IRI="#blocked_by_debris"/>
+        <Class IRI="#emergency_outdoor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#building"/>
@@ -394,7 +391,7 @@
         <Class IRI="#Private_Service"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#cityhall"/>
+        <Class IRI="#city_hall"/>
         <Class IRI="#Public_Building"/>
     </SubClassOf>
     <SubClassOf>
@@ -403,7 +400,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#collapsed"/>
-        <Class IRI="#emergencybuilding"/>
+        <Class IRI="#emergency_building"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#court"/>
@@ -418,41 +415,41 @@
         <Class IRI="#street"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#deadpeople"/>
-        <Class IRI="#emergencypeople"/>
+        <Class IRI="#dead_people"/>
+        <Class IRI="#emergency_people"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#designer"/>
         <Class IRI="#Private_Service"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#emergencybuilding"/>
+        <Class IRI="#emergency_building"/>
         <Class IRI="#situation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#emergencybuilding"/>
+        <Class IRI="#emergency_building"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasObject"/>
             <Class IRI="#building"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#emergencyoutdoor"/>
+        <Class IRI="#emergency_outdoor"/>
         <Class IRI="#situation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#emergencyoutdoor"/>
+        <Class IRI="#emergency_outdoor"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasObject"/>
             <Class IRI="#street"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#emergencypeople"/>
+        <Class IRI="#emergency_people"/>
         <Class IRI="#situation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#emergencypeople"/>
+        <Class IRI="#emergency_people"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasObject"/>
             <Class IRI="#people"/>
@@ -472,7 +469,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#flooded"/>
-        <Class IRI="#emergencybuilding"/>
+        <Class IRI="#emergency_building"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#fountain"/>
@@ -491,7 +488,7 @@
         <Class IRI="#street"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#greeen_grocery"/>
+        <Class IRI="#green_grocery"/>
         <Class IRI="#shop"/>
     </SubClassOf>
     <SubClassOf>
@@ -499,7 +496,7 @@
         <Class IRI="#shop"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#groupofpeople"/>
+        <Class IRI="#group_of_people"/>
         <Class IRI="#people"/>
     </SubClassOf>
     <SubClassOf>
@@ -531,8 +528,8 @@
         <Class IRI="#street"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#injuredpeople"/>
-        <Class IRI="#emergencypeople"/>
+        <Class IRI="#injured_people"/>
+        <Class IRI="#emergency_people"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#jail"/>
@@ -555,12 +552,12 @@
         <Class IRI="#Private_Service"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#middleageperson"/>
+        <Class IRI="#middle_age_person"/>
         <Class IRI="#people"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#mildlyinjured"/>
-        <Class IRI="#injuredpeople"/>
+        <Class IRI="#mildly_injured"/>
+        <Class IRI="#injured_people"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#monument"/>
@@ -575,28 +572,28 @@
         <Class IRI="#shop"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#nofood"/>
-        <Class IRI="#starvingpeople"/>
+        <Class IRI="#no_food"/>
+        <Class IRI="#starving_people"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#nomedicinepeople"/>
-        <Class IRI="#starvingpeople"/>
+        <Class IRI="#no_medicine_people"/>
+        <Class IRI="#starving_people"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#nowaterpeople"/>
-        <Class IRI="#starvingpeople"/>
+        <Class IRI="#no_water_people"/>
+        <Class IRI="#starving_people"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#oldperson"/>
+        <Class IRI="#old_person"/>
         <Class IRI="#people"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#onfire"/>
-        <Class IRI="#emergencybuilding"/>
+        <Class IRI="#on_fire"/>
+        <Class IRI="#emergency_building"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#panickedpeople"/>
-        <Class IRI="#emergencypeople"/>
+        <Class IRI="#panicked_people"/>
+        <Class IRI="#emergency_people"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#people"/>
@@ -619,10 +616,6 @@
         <Class IRI="#Public_Building"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#prison"/>
-        <Class IRI="#Public_Building"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#railway_station"/>
         <Class IRI="#transport"/>
     </SubClassOf>
@@ -639,8 +632,8 @@
         <Class IRI="#Public_Building"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#severelyinjuredpeople"/>
-        <Class IRI="#injuredpeople"/>
+        <Class IRI="#severely_injured_people"/>
+        <Class IRI="#injured_people"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#shop"/>
@@ -659,8 +652,8 @@
         <Class IRI="#street"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#starvingpeople"/>
-        <Class IRI="#emergencypeople"/>
+        <Class IRI="#starving_people"/>
+        <Class IRI="#emergency_people"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#statue"/>
@@ -683,11 +676,11 @@
         <Class IRI="#shop"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#trafficjam"/>
-        <Class IRI="#emergencyoutdoor"/>
+        <Class IRI="#traffic_jam"/>
+        <Class IRI="#emergency_outdoor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#trafficsign"/>
+        <Class IRI="#traffic_sign"/>
         <Class IRI="#street"/>
     </SubClassOf>
     <SubClassOf>
@@ -699,7 +692,7 @@
         <Class IRI="#street"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#youngperson"/>
+        <Class IRI="#young_person"/>
         <Class IRI="#people"/>
     </SubClassOf>
     <DisjointClasses>
@@ -710,13 +703,13 @@
         <Class IRI="#bakery"/>
         <Class IRI="#butcher"/>
         <Class IRI="#gas_station"/>
-        <Class IRI="#greeen_grocery"/>
+        <Class IRI="#green_grocery"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#building"/>
-        <Class IRI="#emergencybuilding"/>
-        <Class IRI="#emergencyoutdoor"/>
-        <Class IRI="#emergencypeople"/>
+        <Class IRI="#emergency_building"/>
+        <Class IRI="#emergency_outdoor"/>
+        <Class IRI="#emergency_people"/>
         <Class IRI="#people"/>
         <Class IRI="#street"/>
     </DisjointClasses>
@@ -732,22 +725,22 @@
         <Class IRI="#street"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#deadpeople"/>
-        <Class IRI="#groupofpeople"/>
-        <Class IRI="#injuredpeople"/>
-        <Class IRI="#oldperson"/>
-        <Class IRI="#panickedpeople"/>
-        <Class IRI="#starvingpeople"/>
-        <Class IRI="#youngperson"/>
+        <Class IRI="#dead_people"/>
+        <Class IRI="#group_of_people"/>
+        <Class IRI="#injured_people"/>
+        <Class IRI="#old_person"/>
+        <Class IRI="#panicked_people"/>
+        <Class IRI="#starving_people"/>
+        <Class IRI="#young_person"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#mildlyinjured"/>
-        <Class IRI="#severelyinjuredpeople"/>
+        <Class IRI="#mildly_injured"/>
+        <Class IRI="#severely_injured_people"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#nofood"/>
-        <Class IRI="#nomedicinepeople"/>
-        <Class IRI="#nowaterpeople"/>
+        <Class IRI="#no_food"/>
+        <Class IRI="#no_medicine_people"/>
+        <Class IRI="#no_water_people"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#jail"/>
@@ -788,7 +781,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#antiquedoor</IRI>
+        <IRI>#antique_door</IRI>
         <Literal>antique door</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -802,6 +795,26 @@
         <Literal>bus stop</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cinema</IRI>
+        <Literal>movie theater</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#city_hall</IRI>
+        <Literal>city hall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#clothes</IRI>
+        <Literal>shoes store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#emergency_people</IRI>
+        <Literal>emergency people</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#fire_station</IRI>
         <Literal>fire station</Literal>
@@ -813,7 +826,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#greeen_grocery</IRI>
+        <IRI>#green_grocery</IRI>
         <Literal>green grocery</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -827,14 +840,29 @@
         <Literal>danger</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#mall</IRI>
+        <Literal>department store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#news_stand</IRI>
         <Literal>news stand</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pharmacy</IRI>
+        <Literal>drug store</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#post_office</IRI>
         <Literal>post office</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#railway_station</IRI>
+        <Literal>train station</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -848,7 +876,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#trafficsign</IRI>
+        <IRI>#traffic_sign</IRI>
         <Literal>traffic sign</Literal>
     </AnnotationAssertion>
 </Ontology>
