@@ -10,7 +10,8 @@ onto.load()
 
 
 #All words without special commands
-if __name__ == '__main__':
+def run():
+
     all_classes = list(onto.classes())
     file=open(g.CHECKDIR+"all_words.txt","w+")
     filePic=open(g.CHECKDIR+"for_pico.txt","w+")
