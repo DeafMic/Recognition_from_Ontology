@@ -5,12 +5,12 @@ import glob
 import global_var as g
 
 # Import and load the ontology from the owl file
-onto = get_ontology(g.ONTODIR)
-onto.load()
 
 
 #All words without special commands
 def run():
+    onto = get_ontology(g.ONTODIR)
+    onto.load()
 
     all_classes = list(onto.classes())
     file=open(g.CHECKDIR+"all_words.txt","w+")
@@ -24,7 +24,8 @@ def run():
             filePic.write("      - "+eachcom.replace("_"," ")+"\n")
 
 
-    
+if __name__ == '__main__':
+    run()
 
 
 
