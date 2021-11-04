@@ -97,6 +97,9 @@
         <Class IRI="#designer"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#door"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#emergency_building"/>
     </Declaration>
     <Declaration>
@@ -211,6 +214,9 @@
         <Class IRI="#on_fire"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#oval"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#panicked_people"/>
     </Declaration>
     <Declaration>
@@ -284,6 +290,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trattoria"/>
     </Declaration>
     <Declaration>
         <Class IRI="#truck"/>
@@ -421,6 +430,10 @@
     <SubClassOf>
         <Class IRI="#designer"/>
         <Class IRI="#Private_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#door"/>
+        <Class IRI="#street"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#emergency_building"/>
@@ -592,6 +605,10 @@
         <Class IRI="#emergency_building"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#oval"/>
+        <Class IRI="#street"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#panicked_people"/>
         <Class IRI="#emergency_people"/>
     </SubClassOf>
@@ -686,6 +703,10 @@
     <SubClassOf>
         <Class IRI="#transport"/>
         <Class IRI="#building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trattoria"/>
+        <Class IRI="#Bar_and_Restaurant"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#truck"/>
@@ -818,6 +839,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#fire_station</IRI>
         <Literal>fire station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fishmarket</IRI>
+        <Literal>fish shop</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

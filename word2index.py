@@ -10,7 +10,7 @@ from pico_class import PicovoiceDemo
 #import words_for_pico
 os.chdir(sys.path[0])
 #words_for_pico.run()
-with open("Dictionaries_txt/all_words.txt","r") as f:
+with open("Check_txt/all_words.txt","r") as f:
         all_words=f.read().splitlines()
         f.close
 onto = get_ontology(g.ONTODIR)

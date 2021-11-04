@@ -14,7 +14,8 @@ def run():
 
     all_classes = list(onto.classes())
     file=open(g.CHECKDIR+"all_words.txt","w+")
-    filePic=open(g.CHECKDIR+"for_pico.txt","w+")
+    filePic=open(g.CHECKDIR+"for_pico.yaml","w+")
+    filePic.write("context:" + "\n" + "  expressions:" + "\n" + "    recognizeLandmark:"+"\n"+"      - $landmark:landmark"+"\n"+"  slots:"+"\n"+"    landmark:"+"\n")
     for each in all_classes:
 
         filePic.write("      - "+each.name.replace("_"," ")+"\n")

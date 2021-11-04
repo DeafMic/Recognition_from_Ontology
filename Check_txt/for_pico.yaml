@@ -1,3 +1,9 @@
+context:
+  expressions:
+    recognizeLandmark:
+      - $landmark:landmark
+  slots:
+    landmark:
       - Bar and Restaurant
       - Family
       - Private Service

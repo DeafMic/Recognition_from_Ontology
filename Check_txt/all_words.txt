@@ -28,12 +28,14 @@ crossroad
 crowded
 dead people
 designer
+door
 emergency building
 emergency outdoor
 emergency people
 fastfood
 fire station
 fishmarket
+fish shop
 flooded
 fountain
 gas station
@@ -69,6 +71,7 @@ no water people
 object
 old person
 on fire
+oval
 panicked people
 people
 pharmacy
@@ -96,5 +99,6 @@ tobacco
 traffic jam
 traffic sign
 transport
+trattoria
 truck
 young person
