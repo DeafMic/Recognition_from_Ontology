@@ -801,6 +801,11 @@
         <Literal>Public building</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#antique_door</IRI>
+        <Literal>ancient door</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#antique_door</IRI>
         <Literal>antique door</Literal>
