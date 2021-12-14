@@ -1,0 +1,27 @@
+sign
+event agecy
+sign
+vegetable shop
+fish store
+lounge bar
+arch
+lounge bar
+arch
+bakery
+event agency
+bakery
+vegetable shop
+tabacheria
+event agency
+arch
+phone sign
+American bar
+tabaccheria
+event agency
+sign
+vegetable shop
+statue
+phone sign
+sign
+event agency 
+bakery

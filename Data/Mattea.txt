@@ -1,0 +1,27 @@
+traffic sign
+crowded
+graffiti
+bar
+shop
+fishmarket
+traffic sign
+fishmarket
+traffic sign
+traffic sign
+crowded
+traffic sign
+green grocery
+green grocery
+crowded
+graffiti
+restaurant
+bar
+green grocery
+crowded
+graffiti
+bar
+shop
+restaurant
+graffiti
+crowded
+traffic sign

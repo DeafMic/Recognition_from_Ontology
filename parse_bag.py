@@ -1,5 +1,6 @@
 #! /usr/bin/env python3
 
+# %%
 import rospy
 import std_msgs.msg as std
 import keyboard
@@ -16,6 +17,8 @@ times_arr=[5.1, 15, 36, 55.3, 112.7, 152, 162,
     221, 232, 288.4, 353, 364.7, 416, 427, 479, 500, 
     549.7, 562.1, 577, 628, 649.8, 669.9, 717, 734.17, 784.5, 805, 820]
 
+print("FIlenumber is ", sys.argv[1])
+# %%
 def callback(time):
     time=time.data
     global loopnum
@@ -34,7 +37,7 @@ def callback(time):
        
     #    pub.publish(int(inp))
     time_now=time-time_start
-    print("time now " +str(round(time_now,2)))
+    # print("time now " +str(round(time_now,2)))
     if time_now >= times_arr[time_ind]:
         pub.publish(ind_arr[time_ind])
         time_ind=time_ind+1
@@ -51,8 +54,16 @@ def listener():
 
 
 if __name__=="__main__":
-    words_file=open("Check_txt/recognized_words.txt")
+    # %%
+    data=os.listdir("Data")
+    filename=sys.argv[1]
+    
+    # rospy.set_param('current_filename',filename.split(".",1)[0])
+    # %%
+    words_file=open("Data/"+filename)
+    
     words_arr=words_file.read().splitlines()
+    print(words_arr)
     sett=list(set(words_arr))
     
     for each in words_arr:
