@@ -1,4 +1,2 @@
-Recognition_from_Onto
-Perfoms offline speech recognition with the given Ontology
+Performs offline speech recognition with the help of PicoVoice recognizer and Onthologies.
 
-Works like a menu selector
