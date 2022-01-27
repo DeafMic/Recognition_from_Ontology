@@ -1,3 +1,0 @@
-goback
-gohome
-enter

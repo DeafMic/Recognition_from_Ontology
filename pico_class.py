@@ -22,6 +22,7 @@ class PicovoiceDemo(Thread):
             self,
             keyword_path,
             context_path,
+            access_key,
             porcupine_library_path=None,
             porcupine_model_path=None,
             porcupine_sensitivity=0.5,
@@ -33,6 +34,7 @@ class PicovoiceDemo(Thread):
 
         self._picovoice = Picovoice(
             keyword_path=keyword_path,
+            access_key=access_key,
             wake_word_callback=self._wake_word_callback,
             context_path=context_path,
             inference_callback=self._inference_callback,
@@ -145,8 +147,9 @@ class PicovoiceDemo(Thread):
 
 if __name__=="__main__":
     recognizer=PicovoiceDemo(
-                    keyword_path='/home/mike/catkin_ws/src/recognition/porcupine/resources/keyword_files/linux/hey siri_linux.ppn',
+                    keyword_path='../../porcupine/resources/keyword_files/linux/hey siri_linux.ppn',
                     context_path='voice_models/SLAM_en_linux_v2_1_0.rhn',
+                    access_key='A7OQvvEvn/kgLMDfCR7YdwQfbiH7gOQm59M1C3DStra6HxD08fzp6w=='
                     # porcupine_library_path=args.porcupine_library_path,
                     # porcupine_model_path=args.porcupine_model_path,
                     # porcupine_sensitivity=args.porcupine_sensitivity,

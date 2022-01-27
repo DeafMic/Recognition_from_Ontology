@@ -4,10 +4,13 @@ import os
 import glob
 import global_var as g
 
-# Import and load the ontology from the owl file
 
 
-#All words without special commands
+
+#All words from Ontology are proccessed
+# all_words.txt contains all words which can be recognized 
+# for_pico.yaml is used to to upload to Picovoice console to later create 
+# a voice recognition model
 def run():
     onto = get_ontology(g.ONTODIR)
     onto.load()
