@@ -146,7 +146,7 @@ class PicovoiceDemo(Thread):
 if __name__=="__main__":
     recognizer=PicovoiceDemo(
                     keyword_path='/home/mike/catkin_ws/src/recognition/porcupine/resources/keyword_files/linux/hey siri_linux.ppn',
-                    context_path='voice_models/SLAM_en_linux_2021-12-03-utc_v1_6_0.rhn',
+                    context_path='voice_models/SLAM_en_linux_v2_1_0.rhn',
                     # porcupine_library_path=args.porcupine_library_path,
                     # porcupine_model_path=args.porcupine_model_path,
                     # porcupine_sensitivity=args.porcupine_sensitivity,
