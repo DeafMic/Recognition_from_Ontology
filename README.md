@@ -6,3 +6,6 @@ Voice models are trained online on the following website: https://console.picovo
 You would have to create your own account. Each model created has 30 days expiration time, after which the same model can be retrained in the rhino console with the new expiration date. 
 
 While Rhino module handles actual voice recognition, Porcupine is the module which trains the wake words. In this way in order to say the wanted word, the user first needs to say the wake word (i.e. "Alexa"), after which the actual word can be said.
+
+
+words_for_pico.py can genererate yaml file from the ontology in the format compatible with the upload to the picovoice console.
