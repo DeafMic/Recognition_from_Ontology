@@ -12,7 +12,7 @@ import soundfile
 from picovoice import Picovoice
 import rospy
 import std_msgs.msg
-
+os.chdir(sys.path[0])
 class PicovoiceDemo(Thread):
     current_word=None
     understood=None
